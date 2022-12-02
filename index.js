@@ -22,7 +22,9 @@ checkButton.addEventListener("click",function(){
             var amountToBeReturned = cashGiven.value - billAmount.value;
             validateChangeAmount(amountToBeReturned);
         }
-        else{
+        else if(cashGiven.value === billAmount.value){
+            showError("thanks for giving exact amount")
+        }else{
             showError("do you wanna wash plates?")
         }
     }
