@@ -10,6 +10,7 @@ var availableNotes=[2000,500,100,20,10,5,1];
 checkBtn.addEventListener("click", function validateBillAmount(){
    
     hideMessage();
+   if(billAmount.value && cashGiven.value){
     if(billAmount.value > 0 ){
         if(Number(cashGiven.value) >= Number(billAmount.value)){
            
@@ -24,6 +25,10 @@ checkBtn.addEventListener("click", function validateBillAmount(){
     else{
         showMessage("Invalid Bill Amount");
     }
+   }
+   else{
+     showMessage("please fill both the fields");  
+   }
 });
 
 function calculateChange(amountToBeReturned){
