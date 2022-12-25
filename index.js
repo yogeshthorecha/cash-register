@@ -46,6 +46,9 @@ function hideMessage(){
 }
 
 function showMessage(msg) {
+    for(let i = 0 ; i < availableNotes.length; i++){
+       numberOfNotes[i].innerText = 0;
+    }
     message.style.display = "block";
     message.innerText = msg;
 }
