@@ -45,6 +45,9 @@ function validateChangeAmount(amountToBeReturned){
 
 }
 function showError(error){
+     for(let i=0; i<availableNotes.length ; i++ ){
+        noOfNotes[i].innerText = "";
+    }
     errorMessage.style.display = "block";
      errorMessage.innerText=error;
 }
