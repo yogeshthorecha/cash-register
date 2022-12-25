@@ -42,7 +42,7 @@ function calculateChange(amountToBeReturned){
 }
 
 function hideMessage(){
-    message.style.display = "block";
+    message.style.display = "none";
 }
 
 function showMessage(msg) {
