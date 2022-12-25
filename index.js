@@ -11,6 +11,7 @@ checkBtn.addEventListener("click", function validateBillAmount(){
    
     hideMessage();
    if(billAmount.value && cashGiven.value){
+      hideMessage();
     if(billAmount.value > 0 ){
         if(Number(cashGiven.value) >= Number(billAmount.value)){
            
